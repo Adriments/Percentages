@@ -17,7 +17,8 @@ PropTablePercents.2 <- prop.table(HouseDataTable, margin = 2)
 #you can convert the table into percentages with an apply() function 
 #see:https://stackoverflow.com/questions/9185745/appending-sign-in-output-of-prop-table
 
-PropTableView.1 <- apply(HDTablePercents.1*100, 2, function(u) sprintf( "%.1f%%", u))
-PropTableView.2 <- apply(HDTablePercents.2*100, 2, function(u) sprintf( "%.1f%%", u))
+PropTableView.1 <- apply(PropTablePercents.1*100, 2, function(u) sprintf( "%.1f%%", u))
+PropTableView.2 <- apply(PropTablePercents.2*100, 2, function(u) sprintf( "%.1f%%", u))
 
 #The above put simply multiplies every entry by 100
+
